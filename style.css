@@ -10,15 +10,66 @@ body {
 }
 .container {
   display: grid;
-  /* grid-template-columns: 1fr 1fr 1fr 1fr; */
-  /* grid-template-rows: 1fr auto; */
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 20% 1fr;
   grid-template-areas:
     "sidebar header header header"
     "sidebar main main main";
 }
 #header {
   grid-area: header;
+  padding: 20px;
   border: 1px solid red;
+}
+#header .topHeader {
+  display: flex;
+  justify-content: space-between;
+}
+.search #inputSearch {
+  width: 550px;
+  height: 30px;
+  border-radius: 20px;
+}
+.icon {
+  vertical-align: middle;
+  padding-right: 15px;
+}
+.notificationAndUserProfile {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 300px;
+}
+.notificationAndUserProfile .profilePic {
+  width: 50px;
+  height: 50px;
+}
+/* .notificationAndUserProfile .headerIcon {
+  display: block;
+  width: 50px;
+} 
+.profileName {
+  display: inline-block;
+}*/
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 10px 10px;
+}
+.navigation .userProfile {
+  display: flex;
+  align-items: center;
+}
+.navButton button {
+  background-color: #1992d4;
+  padding: 10px;
+  border-radius: 25px;
+  width: 100px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  margin: 10px;
 }
 .sidebar {
   grid-area: sidebar;
@@ -29,7 +80,8 @@ body {
   border: 1px solid red;
 }
 .profilePic {
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
   border-radius: 50%;
+  margin-right: 20px;
 }

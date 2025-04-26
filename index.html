@@ -13,14 +13,18 @@
   <body>
     <div class="container">
       <header id="header">
-        <div class="search">
-          <span class="material-symbols-outlined"> search </span>
-          <input type="search" id="inputSearch" />
-        </div>
-        <div class="notificationAndUserProfile">
-          <span class="material-symbols-outlined"> notifications_active </span>
-          <img src="images/cat.PNG" class="profilePic" />
-          <h3 class="profileName">Morgan Oakley</h3>
+        <div class="topHeader">
+          <div class="search">
+            <span class="material-symbols-outlined icon"> search </span>
+            <input type="search" id="inputSearch" />
+          </div>
+          <div class="notificationAndUserProfile">
+            <span class="material-symbols-outlined headerIcon">
+              notifications_active
+            </span>
+            <img src="images/cat.PNG" class="profilePic" />
+            <h3 class="profileName">Morgan Oakley</h3>
+          </div>
         </div>
         <div class="navigation">
           <div class="userProfile">
@@ -37,12 +41,15 @@
         </div>
       </header>
       <div class="sidebar">
-        <img src="images/dashboard.png" />
-        <h1>Dashboard</h1>
+        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25">
+          <title>view-dashboard</title>
+          <path d="M13,3V9H21V3M13,21H21V11H13M3,21H11V15H3M3,13H11V3H3V13Z" />
+        </svg>
+        <span>Dashboard</span>
         <ul class="sideNav">
           <li>
             <span class="material-symbols-outlined"> home </span>
-            Home
+            <span>Home</span>
           </li>
           <li>
             <span class="material-symbols-outlined"> id_card </span>
