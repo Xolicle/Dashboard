@@ -1,2 +1,4 @@
 # Dashboard
-Odin Project to learn using grid
+
+Odin Project to learn grid
+the dashboard is not responsive
